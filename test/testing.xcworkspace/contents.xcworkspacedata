@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Objective-C_FuckJSON_FuckHttp/Objective-C_FuckJSON_FuckHttp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:test_FuckJSON_FuckHttp/test_FuckJSON_FuckHttp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:test_Swfit_post_JSON/test_Swfit_post_JSON.xcodeproj">
    </FileRef>
 </Workspace>
