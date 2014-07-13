@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>backgroundNotification.xcscheme</key>
+		<key>testSingletonForDefine.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>34909FBB1972A7820031F5F2</key>
+		<key>342CEE89197301C9002C88C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34909FD11972A7820031F5F2</key>
+		<key>342CEEAA197301C9002C88C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

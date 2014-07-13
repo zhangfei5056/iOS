@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testSingletonForDefine/testSingletonForDefine.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:backgroundNotification/backgroundNotification.xcodeproj">
    </FileRef>
    <FileRef

@@ -40,11 +40,11 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 
 
-    [self backGround:30];
+    [self detectCopyInBackgroundWithLooptimesMintuesAndSendNotificationWithMessage:30 NotifciatonMsg:[UIPasteboard generalPasteboard].string];
 }
 
 
--(void)backGround:(int)looptimesMintues{
+-(void)detectCopyInBackgroundWithLooptimesMintuesAndSendNotificationWithMessage:(int)looptimesMintues NotifciatonMsg:(NSString*)msg{
     int time = looptimesMintues*60*2;
     // Create a background task identifier
     UIApplication *application = [UIApplication sharedApplication];
@@ -74,7 +74,7 @@
                 if (![pastboardContents isEqualToString:@"1"]) {
 
 //                    NSLog(@"Pasteboard Contents: %@", pastboardContents);
-                    [self sendNotification:[UIPasteboard generalPasteboard].string];
+                    [self sendNotification:msg];
                 }
             }
             [UIPasteboard generalPasteboard].string = @"1";
