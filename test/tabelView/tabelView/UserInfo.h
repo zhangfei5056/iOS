@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ContactBean.h"
 @interface UserInfo : NSObject
 
 @property(nonatomic, retain)NSString *administration;
@@ -26,5 +26,5 @@
 
 //解析用户信息
 +(UserInfo *)parserUserInfo:(NSDictionary *)infoDic;
-
++(UserInfo *)parserUserInfoFromContactBean:(ContactBean*)contactBean;
 @end

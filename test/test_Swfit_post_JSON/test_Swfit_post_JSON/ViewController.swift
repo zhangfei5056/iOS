@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     var i = 0
+    @IBAction func push(sender : AnyObject) {
+    }
     @IBOutlet var textView : UITextView
     
     override func viewDidLoad() {

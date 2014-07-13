@@ -2,13 +2,19 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testTransSegue/testTransSegue.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:dataTrans/dataTrans.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ShanBay/ShanBay.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:tabelView/tabelView.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:testTableViewForAddressList/testTableViewForAddressList.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:ShanBaySearchWord/ShanBaySearchWord.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Objective-C_FuckJSON_FuckHttp/Objective-C_FuckJSON_FuckHttp.xcodeproj">

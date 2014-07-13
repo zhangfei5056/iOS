@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
+#import "TempRootViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,7 +15,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[RootViewController alloc]init]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[TempRootViewController alloc]init]];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;

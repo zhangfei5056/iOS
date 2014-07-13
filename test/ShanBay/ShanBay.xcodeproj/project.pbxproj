@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		349E32D5196FC47100E7D0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E32D4196FC47100E7D0E1 /* AppDelegate.swift */; };
+		349E32D7196FC47100E7D0E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349E32D6196FC47100E7D0E1 /* Images.xcassets */; };
+		349E32E3196FC47100E7D0E1 /* ShanBayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E32E2196FC47100E7D0E1 /* ShanBayTests.swift */; };
+		349E32F2196FC4E900E7D0E1 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E32F0196FC4E900E7D0E1 /* AuthorizationViewController.swift */; };
+		349E32F3196FC4E900E7D0E1 /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349E32F1196FC4E900E7D0E1 /* AuthorizationViewController.xib */; };
+		349E32F6196FCFA900E7D0E1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E32F4196FCFA900E7D0E1 /* SearchViewController.swift */; };
+		349E32F7196FCFA900E7D0E1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349E32F5196FCFA900E7D0E1 /* SearchViewController.xib */; };
+		349E32F9196FD10200E7D0E1 /* FuckJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E32F8196FD10200E7D0E1 /* FuckJSON.swift */; };
+		349E32FB196FD23A00E7D0E1 /* FuckHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E32FA196FD23A00E7D0E1 /* FuckHttp.swift */; };
+		349E32FD196FE73500E7D0E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349E32FC196FE73500E7D0E1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		349E32DD196FC47100E7D0E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349E32C7196FC47100E7D0E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 349E32CE196FC47100E7D0E1;
+			remoteInfo = ShanBay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		349E32CF196FC47100E7D0E1 /* ShanBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShanBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		349E32D3196FC47100E7D0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349E32D4196FC47100E7D0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		349E32D6196FC47100E7D0E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		349E32DC196FC47100E7D0E1 /* ShanBayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShanBayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		349E32E1196FC47100E7D0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349E32E2196FC47100E7D0E1 /* ShanBayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShanBayTests.swift; sourceTree = "<group>"; };
+		349E32F0196FC4E900E7D0E1 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		349E32F1196FC4E900E7D0E1 /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
+		349E32F4196FCFA900E7D0E1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		349E32F5196FCFA900E7D0E1 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		349E32F8196FD10200E7D0E1 /* FuckJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckJSON.swift; sourceTree = "<group>"; };
+		349E32FA196FD23A00E7D0E1 /* FuckHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckHttp.swift; sourceTree = "<group>"; };
+		349E32FC196FE73500E7D0E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34E857D119728CD90027FF0E /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		349E32CC196FC47100E7D0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349E32FD196FE73500E7D0E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349E32D9196FC47100E7D0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		349E32C6196FC47100E7D0E1 = {
+			isa = PBXGroup;
+			children = (
+				34E857D119728CD90027FF0E /* test.playground */,
+				349E32FC196FE73500E7D0E1 /* Foundation.framework */,
+				349E32D1196FC47100E7D0E1 /* ShanBay */,
+				349E32DF196FC47100E7D0E1 /* ShanBayTests */,
+				349E32D0196FC47100E7D0E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		349E32D0196FC47100E7D0E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349E32CF196FC47100E7D0E1 /* ShanBay.app */,
+				349E32DC196FC47100E7D0E1 /* ShanBayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		349E32D1196FC47100E7D0E1 /* ShanBay */ = {
+			isa = PBXGroup;
+			children = (
+				349E32D4196FC47100E7D0E1 /* AppDelegate.swift */,
+				349E32F0196FC4E900E7D0E1 /* AuthorizationViewController.swift */,
+				349E32F1196FC4E900E7D0E1 /* AuthorizationViewController.xib */,
+				349E32F4196FCFA900E7D0E1 /* SearchViewController.swift */,
+				349E32F5196FCFA900E7D0E1 /* SearchViewController.xib */,
+				349E32D6196FC47100E7D0E1 /* Images.xcassets */,
+				349E32F8196FD10200E7D0E1 /* FuckJSON.swift */,
+				349E32FA196FD23A00E7D0E1 /* FuckHttp.swift */,
+				349E32D2196FC47100E7D0E1 /* Supporting Files */,
+			);
+			path = ShanBay;
+			sourceTree = "<group>";
+		};
+		349E32D2196FC47100E7D0E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				349E32D3196FC47100E7D0E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		349E32DF196FC47100E7D0E1 /* ShanBayTests */ = {
+			isa = PBXGroup;
+			children = (
+				349E32E2196FC47100E7D0E1 /* ShanBayTests.swift */,
+				349E32E0196FC47100E7D0E1 /* Supporting Files */,
+			);
+			path = ShanBayTests;
+			sourceTree = "<group>";
+		};
+		349E32E0196FC47100E7D0E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				349E32E1196FC47100E7D0E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		349E32CE196FC47100E7D0E1 /* ShanBay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349E32E6196FC47100E7D0E1 /* Build configuration list for PBXNativeTarget "ShanBay" */;
+			buildPhases = (
+				349E32CB196FC47100E7D0E1 /* Sources */,
+				349E32CC196FC47100E7D0E1 /* Frameworks */,
+				349E32CD196FC47100E7D0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShanBay;
+			productName = ShanBay;
+			productReference = 349E32CF196FC47100E7D0E1 /* ShanBay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		349E32DB196FC47100E7D0E1 /* ShanBayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349E32E9196FC47100E7D0E1 /* Build configuration list for PBXNativeTarget "ShanBayTests" */;
+			buildPhases = (
+				349E32D8196FC47100E7D0E1 /* Sources */,
+				349E32D9196FC47100E7D0E1 /* Frameworks */,
+				349E32DA196FC47100E7D0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				349E32DE196FC47100E7D0E1 /* PBXTargetDependency */,
+			);
+			name = ShanBayTests;
+			productName = ShanBayTests;
+			productReference = 349E32DC196FC47100E7D0E1 /* ShanBayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		349E32C7196FC47100E7D0E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = caoyuan;
+				TargetAttributes = {
+					349E32CE196FC47100E7D0E1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					349E32DB196FC47100E7D0E1 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 349E32CE196FC47100E7D0E1;
+					};
+				};
+			};
+			buildConfigurationList = 349E32CA196FC47100E7D0E1 /* Build configuration list for PBXProject "ShanBay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 349E32C6196FC47100E7D0E1;
+			productRefGroup = 349E32D0196FC47100E7D0E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				349E32CE196FC47100E7D0E1 /* ShanBay */,
+				349E32DB196FC47100E7D0E1 /* ShanBayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		349E32CD196FC47100E7D0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349E32D7196FC47100E7D0E1 /* Images.xcassets in Resources */,
+				349E32F3196FC4E900E7D0E1 /* AuthorizationViewController.xib in Resources */,
+				349E32F7196FCFA900E7D0E1 /* SearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349E32DA196FC47100E7D0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		349E32CB196FC47100E7D0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349E32F9196FD10200E7D0E1 /* FuckJSON.swift in Sources */,
+				349E32F6196FCFA900E7D0E1 /* SearchViewController.swift in Sources */,
+				349E32F2196FC4E900E7D0E1 /* AuthorizationViewController.swift in Sources */,
+				349E32FB196FD23A00E7D0E1 /* FuckHttp.swift in Sources */,
+				349E32D5196FC47100E7D0E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349E32D8196FC47100E7D0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349E32E3196FC47100E7D0E1 /* ShanBayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		349E32DE196FC47100E7D0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 349E32CE196FC47100E7D0E1 /* ShanBay */;
+			targetProxy = 349E32DD196FC47100E7D0E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		349E32E4196FC47100E7D0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		349E32E5196FC47100E7D0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		349E32E7196FC47100E7D0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ShanBay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		349E32E8196FC47100E7D0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ShanBay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		349E32EA196FC47100E7D0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShanBay.app/ShanBay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShanBayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		349E32EB196FC47100E7D0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShanBay.app/ShanBay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShanBayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		349E32CA196FC47100E7D0E1 /* Build configuration list for PBXProject "ShanBay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349E32E4196FC47100E7D0E1 /* Debug */,
+				349E32E5196FC47100E7D0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349E32E6196FC47100E7D0E1 /* Build configuration list for PBXNativeTarget "ShanBay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349E32E7196FC47100E7D0E1 /* Debug */,
+				349E32E8196FC47100E7D0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349E32E9196FC47100E7D0E1 /* Build configuration list for PBXNativeTarget "ShanBayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349E32EA196FC47100E7D0E1 /* Debug */,
+				349E32EB196FC47100E7D0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 349E32C7196FC47100E7D0E1 /* Project object */;
+}

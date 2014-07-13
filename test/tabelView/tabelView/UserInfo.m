@@ -78,4 +78,25 @@
     return [info autorelease];
 }
 
++(UserInfo *)parserUserInfoFromContactBean:(ContactBean*)contactBean
+{
+    UserInfo *info = [[UserInfo alloc] init];
+    info.administration = contactBean.administration;
+    info.brithday = contactBean.birthday;
+    info.department = contactBean.department;
+    info.email = contactBean.email;
+    info.exttex = contactBean.exttex;
+    info.fex = contactBean.fex;
+    info.name = contactBean.name;
+    info.oldUnit = contactBean.oldUnit;
+    info.phone = contactBean.phone;
+    info.sex = contactBean.sex;
+    info.tel = contactBean.tel;
+    info.userId = contactBean.userId;
+    info.user_photo = contactBean.user_photo;
+
+    return [info autorelease];
+    
+}
+
 @end

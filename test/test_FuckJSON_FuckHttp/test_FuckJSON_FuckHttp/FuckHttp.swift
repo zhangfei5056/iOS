@@ -26,6 +26,11 @@ class FuckHttp: NSObject {
     }
 
     class func get(url:NSString?)->NSDictionary? {
-        return nil
+        var URL = NSURL.URLWithString(url)
+        var receivedNSData = NSData.dataWithContentsOfURL(URL, options:NSDataReadingOptions.DataReadingUncached, error: nil)
+        var dic = FuckJSON.fuckJsonToDic(receivedNSData)
+        return dic
+
     }
+
 }
