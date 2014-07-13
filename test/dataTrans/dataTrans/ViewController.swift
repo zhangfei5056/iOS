@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     var tempString:String = ""
+    @IBOutlet var textFiedl : UITextField
+    @IBOutlet var tfeld : UITextField
     @IBOutlet var textField : UITextField
     @IBAction func push(sender : AnyObject) {
         var sVC = SViewController()
@@ -18,6 +20,7 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("good", sender: sender)
 //        self.shouldPerformSegueWithIdentifier("good", sender:self);
     }
+    @IBOutlet var tf : UITextField
                             
     override func viewDidLoad() {
         super.viewDidLoad()

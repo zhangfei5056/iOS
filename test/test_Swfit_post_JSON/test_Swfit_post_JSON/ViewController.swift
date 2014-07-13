@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     var i = 0
+    @IBOutlet var ddd : UITextField
+    @IBAction func test(sender : AnyObject) {
+    }
     @IBAction func push(sender : AnyObject) {
     }
     @IBOutlet var textView : UITextView
@@ -23,6 +26,8 @@ class ViewController: UIViewController {
         println(t)
     
         }
+    @IBAction func action(sender : AnyObject) {
+    }
 
 override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
