@@ -8,9 +8,6 @@
       location = "group:testBacgGround_OC/testBacgGround_OC.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:PaseBoar_Notification/PaseBoar_Notification.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:testTransSegue/testTransSegue.xcodeproj">
    </FileRef>
    <FileRef
