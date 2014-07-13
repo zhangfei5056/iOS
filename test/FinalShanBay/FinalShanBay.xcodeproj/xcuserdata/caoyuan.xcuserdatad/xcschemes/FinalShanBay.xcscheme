@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "342CEE89197301C9002C88C1"
-               BuildableName = "testSingletonForDefine.app"
-               BlueprintName = "testSingletonForDefine"
-               ReferencedContainer = "container:testSingletonForDefine.xcodeproj">
+               BlueprintIdentifier = "34B8C85D197305DD00E4ADE0"
+               BuildableName = "FinalShanBay.app"
+               BlueprintName = "FinalShanBay"
+               ReferencedContainer = "container:FinalShanBay.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "342CEEAA197301C9002C88C1"
-               BuildableName = "testSingletonForDefineTests.xctest"
-               BlueprintName = "testSingletonForDefineTests"
-               ReferencedContainer = "container:testSingletonForDefine.xcodeproj">
+               BlueprintIdentifier = "34B8C86F197305DD00E4ADE0"
+               BuildableName = "FinalShanBayTests.xctest"
+               BlueprintName = "FinalShanBayTests"
+               ReferencedContainer = "container:FinalShanBay.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "342CEE89197301C9002C88C1"
-            BuildableName = "testSingletonForDefine.app"
-            BlueprintName = "testSingletonForDefine"
-            ReferencedContainer = "container:testSingletonForDefine.xcodeproj">
+            BlueprintIdentifier = "34B8C85D197305DD00E4ADE0"
+            BuildableName = "FinalShanBay.app"
+            BlueprintName = "FinalShanBay"
+            ReferencedContainer = "container:FinalShanBay.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "342CEE89197301C9002C88C1"
-            BuildableName = "testSingletonForDefine.app"
-            BlueprintName = "testSingletonForDefine"
-            ReferencedContainer = "container:testSingletonForDefine.xcodeproj">
+            BlueprintIdentifier = "34B8C85D197305DD00E4ADE0"
+            BuildableName = "FinalShanBay.app"
+            BlueprintName = "FinalShanBay"
+            ReferencedContainer = "container:FinalShanBay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "342CEE89197301C9002C88C1"
-            BuildableName = "testSingletonForDefine.app"
-            BlueprintName = "testSingletonForDefine"
-            ReferencedContainer = "container:testSingletonForDefine.xcodeproj">
+            BlueprintIdentifier = "34B8C85D197305DD00E4ADE0"
+            BuildableName = "FinalShanBay.app"
+            BlueprintName = "FinalShanBay"
+            ReferencedContainer = "container:FinalShanBay.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
