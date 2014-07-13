@@ -74,7 +74,7 @@
                 if (![pastboardContents isEqualToString:@"1"]) {
 
 //                    NSLog(@"Pasteboard Contents: %@", pastboardContents);
-                    [self sendNotification];
+                    [self sendNotification:[UIPasteboard generalPasteboard].string];
                 }
             }
             [UIPasteboard generalPasteboard].string = @"1";
@@ -93,7 +93,7 @@
 
 
 
--(void)sendNotification{
+-(void)sendNotification:(NSString*)msgShowUp{
     //发送通知
     UILocalNotification *notification=[[UILocalNotification alloc] init];
     if (notification!=nil) {
@@ -104,8 +104,8 @@
         notification.applicationIconBadgeNumber=0; //应用的红色数字
         notification.soundName= UILocalNotificationDefaultSoundName;//声音，可以换成alarm.soundName = @"myMusic.caf"
         //去掉下面2行就不会弹出提示框
-//        NSString *msg = [NSString stringWithFormat:@"%@:%@",]
-        notification.alertBody=@"通知内容";//提示信息 弹出提示框
+
+        notification.alertBody = msgShowUp;//提示信息 弹出提示框
         notification.alertAction = @"打开";  //提示框按钮
 //        notification.hasAction = YES; //是否显示额外的按钮，为no时alertAction消失
         // NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"someValue" forKey:@"someKey"];
