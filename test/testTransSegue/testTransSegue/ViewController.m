@@ -10,6 +10,7 @@
 
 @interface ViewController ()
             
+- (IBAction)btaction:(id)sender;
 
 @end
 
@@ -27,5 +28,7 @@
 
 - (IBAction)push:(id)sender {
     [self performSegueWithIdentifier:@"good" sender:sender];
+}
+- (IBAction)btaction:(id)sender {
 }
 @end

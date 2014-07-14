@@ -10,6 +10,7 @@
 
 @interface ViewController ()
             
+- (IBAction)action:(id)sender;
 
 @end
 
@@ -25,4 +26,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)action:(id)sender {
+}
 @end

@@ -3,4 +3,4 @@
 //
 
 #import "CopyMsgNotificationBackground.h"
-#import "AppConfig"
+#import "AppConfig.h"

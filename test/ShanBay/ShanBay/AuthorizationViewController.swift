@@ -12,7 +12,6 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet var webView : UIWebView
     var token:NSString?
 
-
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         // Custom initialization

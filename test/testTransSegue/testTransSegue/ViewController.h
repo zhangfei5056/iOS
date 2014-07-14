@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 - (IBAction)push:(id)sender;
+- (IBAction)aaaa:(id)sender;
 
 @end
 

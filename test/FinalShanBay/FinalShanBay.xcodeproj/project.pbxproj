@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341057601973D8C700421137 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3410575F1973D8C700421137 /* AuthorizationViewController.swift */; };
+		341057621973D8E400421137 /* FuckJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341057611973D8E400421137 /* FuckJSON.swift */; };
+		341057641973D90000421137 /* FuckHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341057631973D90000421137 /* FuckHttp.swift */; };
+		341057661973D90A00421137 /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341057651973D90A00421137 /* AuthorizationViewController.xib */; };
+		341057681973D91100421137 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341057671973D91100421137 /* SearchViewController.swift */; };
+		3410576A1973D91600421137 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 341057691973D91600421137 /* SearchViewController.xib */; };
 		34B8C864197305DD00E4ADE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B8C863197305DD00E4ADE0 /* AppDelegate.swift */; };
 		34B8C866197305DD00E4ADE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B8C865197305DD00E4ADE0 /* ViewController.swift */; };
 		34B8C869197305DD00E4ADE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B8C867197305DD00E4ADE0 /* Main.storyboard */; };
@@ -27,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3410575F1973D8C700421137 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		341057611973D8E400421137 /* FuckJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckJSON.swift; sourceTree = "<group>"; };
+		341057631973D90000421137 /* FuckHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuckHttp.swift; sourceTree = "<group>"; };
+		341057651973D90A00421137 /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
+		341057671973D91100421137 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		341057691973D91600421137 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		34B8C85E197305DD00E4ADE0 /* FinalShanBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalShanBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B8C862197305DD00E4ADE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B8C863197305DD00E4ADE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				34B8C863197305DD00E4ADE0 /* AppDelegate.swift */,
+				3410575F1973D8C700421137 /* AuthorizationViewController.swift */,
+				341057651973D90A00421137 /* AuthorizationViewController.xib */,
+				341057671973D91100421137 /* SearchViewController.swift */,
+				341057691973D91600421137 /* SearchViewController.xib */,
+				341057631973D90000421137 /* FuckHttp.swift */,
+				341057611973D8E400421137 /* FuckJSON.swift */,
 				34B8C865197305DD00E4ADE0 /* ViewController.swift */,
 				34B8C867197305DD00E4ADE0 /* Main.storyboard */,
 				34B8C86A197305DD00E4ADE0 /* Images.xcassets */,
@@ -205,6 +223,8 @@
 			files = (
 				34B8C869197305DD00E4ADE0 /* Main.storyboard in Resources */,
 				34B8C86B197305DD00E4ADE0 /* Images.xcassets in Resources */,
+				3410576A1973D91600421137 /* SearchViewController.xib in Resources */,
+				341057661973D90A00421137 /* AuthorizationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341057621973D8E400421137 /* FuckJSON.swift in Sources */,
 				34B8C866197305DD00E4ADE0 /* ViewController.swift in Sources */,
+				341057681973D91100421137 /* SearchViewController.swift in Sources */,
+				341057641973D90000421137 /* FuckHttp.swift in Sources */,
 				34B8C890197308AB00E4ADE0 /* AppConfig.m in Sources */,
 				34B8C8861973065E00E4ADE0 /* CopyMsgNotificationBackground.m in Sources */,
+				341057601973D8C700421137 /* AuthorizationViewController.swift in Sources */,
 				34B8C864197305DD00E4ADE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +444,7 @@
 				34B8C87C197305DD00E4ADE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34B8C87D197305DD00E4ADE0 /* Build configuration list for PBXNativeTarget "FinalShanBayTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +453,7 @@
 				34B8C87F197305DD00E4ADE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,5 +24,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)ddd:(id)sender {
+}
 
+- (IBAction)xxcxzc:(id)sender {
+}
 @end

@@ -58,10 +58,6 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
 
         }
     }
-    @IBAction func statusBTAction(sender : AnyObject) {
-        self.statusBT.titleLabel.text = "status:"
-        self.serachTextField.text = ""
-    }
 
 //pragma mark - Navigation
 // MARK: - UITableViewDataSource
@@ -77,6 +73,11 @@ class SearchViewController: UIViewController,UITextFieldDelegate {
         else{
              self.statusBT.titleLabel.text = "添加失败"
         }
+    }
+
+    @IBAction func statusBTAction(sender : AnyObject) {
+        self.statusBT.titleLabel.text = "status:"
+        self.serachTextField.text = ""
     }
 
     func textFieldShouldReturn(textField: UITextField!) {
