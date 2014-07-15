@@ -74,7 +74,13 @@
 }
 
 - (IBAction)reLogin:(id)sender {
-
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    NSHTTPCookie *cookie = nil;
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (cookie in [storage cookies]) {
+        [storage deleteCookie:cookie];
+    }
+    [self.webView reload];
 }
 
 

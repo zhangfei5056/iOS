@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    int _count;
+    UIBackgroundTaskIdentifier _taskId;
+    UIBackgroundTaskIdentifier  _taskId2;
+}
 @property (strong, nonatomic) UIWindow *window;
 
 @end

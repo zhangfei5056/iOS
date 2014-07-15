@@ -229,6 +229,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = caoyuan;
 				TargetAttributes = {
+					34118AF41973DBDB008D765B = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					34118B0F1973DBDC008D765B = {
 						TestTargetID = 34118AF41973DBDB008D765B;
 					};

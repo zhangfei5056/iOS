@@ -20,7 +20,41 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[AuthorizationViewController alloc] init];
     [self.window makeKeyAndVisible];
+//    [application setMinimumBackgroundFetchInterval:1];
+       [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerActionFront:) userInfo:nil repeats:YES];
     return YES;
+}
+
+-(void)timerActionFront:(NSTimer*)timer{
+    NSLog(@"-----");
+    int d = [[[UIApplication sharedApplication] valueForKey:@"backgroundTimeRemaining"] floatValue];
+
+
+    NSLog(@"%d remaining",d);
+}
+
+-(void)timerAction:(NSTimer*)timer{
+    _count++;
+
+    if (_count  == 10) {
+        UIApplication *application = [UIApplication sharedApplication];
+//        [application endBackgroundTask:_taskId];
+        [application beginBackgroundTaskWithExpirationHandler:^(void){
+//            [application endBackgroundTask:_taskId];
+//            _taskId = UIBackgroundTaskInvalid;
+
+        }];
+//        [application endBackgroundTask:_taskId];
+//        _taskId = _taskId2;
+//        [application endBackgroundTask:_taskId2];
+//        [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+//            [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:self repeats:YES];
+//            [[NSRunLoop currentRunLoop] run];
+//        }];
+        _count = 0;
+    }
+    NSLog(@"%d",_count);
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -28,13 +62,63 @@
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
+//-(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
+//        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:self repeats:YES];
+//        completionHandler(UIBackgroundFetchResultNewData);
+//}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    [self detectInBackgroundForMintues:30];
+//    [self detectInBackgroundForMintues:30];
+    _taskId = [application beginBackgroundTaskWithExpirationHandler:^{
+
+        [application endBackgroundTask:_taskId];
+        _taskId = UIBackgroundTaskInvalid;
+    }];
+    [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:self repeats:YES];
+        [[NSRunLoop currentRunLoop] run];
+    }];
+
+    // Do the task
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
+        NSString *pastboardContents = @"1784588";
+
+        for (int i = 0; i < 7200; i++)
+        {   // if pasetboard content is not as the same , then run barcket inside
+            if (![pastboardContents isEqualToString:[UIPasteboard generalPasteboard].string] )
+            {
+                pastboardContents = [UIPasteboard generalPasteboard].string;
+                [AppConfig sharedAppConfig].enWord = pastboardContents;
+                //if pastebaord contents is not "1",then run in side, because I make the pastboard to "1784588" while  every loop end
+                // that make if you keep copy the same words, this works! just not "1784588"
+                if (![pastboardContents isEqualToString:@"1784588"]) {
+                    //whatever you want runing in backround ,just coding here...
+                    //                    [self sendNotification: [AppConfig sharedAppConfig].enWord];
+                    [self getCnDefinition];
+
+                    if ([AppConfig sharedAppConfig].cnWord) {
+                        NSString *msg = [NSString stringWithFormat:@"%@:%@",[AppConfig sharedAppConfig].enWord,[AppConfig sharedAppConfig].cnWord];
+                        [self getCnDefinition];
+                        [self sendNotification:msg];
+                    }
+                }
+            }
+            [UIPasteboard generalPasteboard].string = @"1784588";
+
+            // Wait some time before going to the beginning of the loop
+            [NSThread sleepForTimeInterval:0.5];
+            //            [self cancelAllNotification];
+        }
+
+        // End the task
+        [application endBackgroundTask:_taskId];
+    });
 }
+
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
@@ -54,7 +138,8 @@
 #pragma mark - search words method:
 // get the english word's chinese definition
 -(void)getCnDefinition {
-    NSString *enWord = [AppConfig sharedAppConfig].enWord;
+//    NSString *enWord = [AppConfig sharedAppConfig].enWord;
+    NSString *enWord = [UIPasteboard generalPasteboard].string;
     if ( enWord.length == 0 || enWord == nil) {
         NSLog(@"no word to search");
         return;
@@ -130,7 +215,11 @@
                     //whatever you want runing in backround ,just coding here...
 //                    [self sendNotification: [AppConfig sharedAppConfig].enWord];
                     [self getCnDefinition];
-                    [self sendNotification:[AppConfig sharedAppConfig].cnWord];
+
+                    if ([AppConfig sharedAppConfig].cnWord) {
+                        NSString *msg = [NSString stringWithFormat:@"%@:%@",[AppConfig sharedAppConfig].enWord,[AppConfig sharedAppConfig].cnWord];
+                        [self sendNotification:msg];
+                    }
                 }
             }
             [UIPasteboard generalPasteboard].string = @"1784588";
@@ -156,7 +245,8 @@
 
 -(void)sendNotification:(NSString*)msgShowUp{
     //发送通知
-    UILocalNotification *notification=[[UILocalNotification alloc] init];
+    [self cancelAllNotification];
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
     if (notification!=nil) {
         NSDate *now=[NSDate new];
         notification.fireDate=[now dateByAddingTimeInterval:0.2];//10秒后通知
