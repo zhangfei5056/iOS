@@ -26,7 +26,6 @@
 		34C60A591973F6CD00ACCC1F /* FuckJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C60A561973F6CD00ACCC1F /* FuckJSON.m */; };
 		34C60A5A1973F6CD00ACCC1F /* FuckHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C60A581973F6CD00ACCC1F /* FuckHttp.m */; };
 		34C60A5E197407A200ACCC1F /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C60A5D197407A200ACCC1F /* AppConfig.m */; };
-		34C60A6119740B9100ACCC1F /* CopyMsgNotificationBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C60A6019740B9100ACCC1F /* CopyMsgNotificationBackground.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +68,6 @@
 		34C60A5B197403C500ACCC1F /* ARCSingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCSingletonTemplate.h; sourceTree = "<group>"; };
 		34C60A5C197407A200ACCC1F /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		34C60A5D197407A200ACCC1F /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
-		34C60A5F19740B9100ACCC1F /* CopyMsgNotificationBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyMsgNotificationBackground.h; sourceTree = "<group>"; };
-		34C60A6019740B9100ACCC1F /* CopyMsgNotificationBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyMsgNotificationBackground.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +142,6 @@
 				34C60A561973F6CD00ACCC1F /* FuckJSON.m */,
 				34C60A571973F6CD00ACCC1F /* FuckHttp.h */,
 				34C60A581973F6CD00ACCC1F /* FuckHttp.m */,
-				34C60A5F19740B9100ACCC1F /* CopyMsgNotificationBackground.h */,
-				34C60A6019740B9100ACCC1F /* CopyMsgNotificationBackground.m */,
 				34118B0A1973DBDB008D765B /* Images.xcassets */,
 				34118AFF1973DBDB008D765B /* Supporting Files */,
 			);
@@ -289,7 +284,6 @@
 				34C60A5A1973F6CD00ACCC1F /* FuckHttp.m in Sources */,
 				34C60A5E197407A200ACCC1F /* AppConfig.m in Sources */,
 				34C60A591973F6CD00ACCC1F /* FuckJSON.m in Sources */,
-				34C60A6119740B9100ACCC1F /* CopyMsgNotificationBackground.m in Sources */,
 				34118B091973DBDB008D765B /* AppDelegate.m in Sources */,
 				34118B051973DBDB008D765B /* main.m in Sources */,
 				349801AC1973DF5F0059FC40 /* SearchViewController.m in Sources */,
