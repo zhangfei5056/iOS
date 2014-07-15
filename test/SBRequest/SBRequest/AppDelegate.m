@@ -38,19 +38,9 @@
 
     if (_count  == 10) {
         UIApplication *application = [UIApplication sharedApplication];
-//        [application endBackgroundTask:_taskId];
         [application beginBackgroundTaskWithExpirationHandler:^(void){
-//            [application endBackgroundTask:_taskId];
-//            _taskId = UIBackgroundTaskInvalid;
 
         }];
-//        [application endBackgroundTask:_taskId];
-//        _taskId = _taskId2;
-//        [application endBackgroundTask:_taskId2];
-//        [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
-//            [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:self repeats:YES];
-//            [[NSRunLoop currentRunLoop] run];
-//        }];
         _count = 0;
     }
     NSLog(@"%d",_count);
@@ -62,18 +52,12 @@
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
-//-(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
-//        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:self repeats:YES];
-//        completionHandler(UIBackgroundFetchResultNewData);
-//}
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-//    [self detectInBackgroundForMintues:30];
+    //form 'this line' to 'Do the task' line ,new a thread keep call timeAction; to hold application active in background.
     _taskId = [application beginBackgroundTaskWithExpirationHandler:^{
-
         [application endBackgroundTask:_taskId];
         _taskId = UIBackgroundTaskInvalid;
     }];
@@ -81,39 +65,9 @@
         [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:self repeats:YES];
         [[NSRunLoop currentRunLoop] run];
     }];
-
     // Do the task
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-
-        NSString *pastboardContents = @"1784588";
-
-        for (int i = 0; i < 7200; i++)
-        {   // if pasetboard content is not as the same , then run barcket inside
-            if (![pastboardContents isEqualToString:[UIPasteboard generalPasteboard].string] )
-            {
-                pastboardContents = [UIPasteboard generalPasteboard].string;
-                [AppConfig sharedAppConfig].enWord = pastboardContents;
-                //if pastebaord contents is not "1",then run in side, because I make the pastboard to "1784588" while  every loop end
-                // that make if you keep copy the same words, this works! just not "1784588"
-                if (![pastboardContents isEqualToString:@"1784588"]) {
-                    //whatever you want runing in backround ,just coding here...
-                    //                    [self sendNotification: [AppConfig sharedAppConfig].enWord];
-                    [self getCnDefinition];
-
-                    if ([AppConfig sharedAppConfig].cnWord) {
-                        NSString *msg = [NSString stringWithFormat:@"%@:%@",[AppConfig sharedAppConfig].enWord,[AppConfig sharedAppConfig].cnWord];
-                        [self getCnDefinition];
-                        [self sendNotification:msg];
-                    }
-                }
-            }
-            [UIPasteboard generalPasteboard].string = @"1784588";
-
-            // Wait some time before going to the beginning of the loop
-            [NSThread sleepForTimeInterval:0.5];
-            //            [self cancelAllNotification];
-        }
-
+        [self searchWordInBackground];
         // End the task
         [application endBackgroundTask:_taskId];
     });
@@ -136,6 +90,41 @@
 }
 
 #pragma mark - search words method:
+
+-(void)searchWordInBackground{
+
+    NSString *pastboardContents = @"1784588";
+
+    for (int i = 0; i < 7200; i++)
+    {   // if pasetboard content is not as the same , then run barcket inside
+        if (![pastboardContents isEqualToString:[UIPasteboard generalPasteboard].string] )
+        {
+            pastboardContents = [UIPasteboard generalPasteboard].string;
+            [AppConfig sharedAppConfig].enWord = pastboardContents;
+            //if pastebaord contents is not "1",then run in side, because I make the pastboard to "1784588" while  every loop end
+            // that make if you keep copy the same words, this works! just not "1784588"
+            if (![pastboardContents isEqualToString:@"1784588"]) {
+                //whatever you want runing in backround ,just coding here...
+                //                    [self sendNotification: [AppConfig sharedAppConfig].enWord];
+                [self getCnDefinition];
+
+                if ([AppConfig sharedAppConfig].cnWord) {
+                    NSString *msg = [NSString stringWithFormat:@"%@:%@",[AppConfig sharedAppConfig].enWord,[AppConfig sharedAppConfig].cnWord];
+                    [self getCnDefinition];
+                    [self sendNotification:msg];
+                }
+            }
+        }
+        [UIPasteboard generalPasteboard].string = @"1784588";
+
+        // Wait some time before going to the beginning of the loop
+        [NSThread sleepForTimeInterval:0.5];
+        //            [self cancelAllNotification];
+    }
+
+}
+
+
 // get the english word's chinese definition
 -(void)getCnDefinition {
 //    NSString *enWord = [AppConfig sharedAppConfig].enWord;
@@ -212,23 +201,27 @@
                 //if pastebaord contents is not "1",then run in side, because I make the pastboard to "1784588" while  every loop end
                 // that make if you keep copy the same words, this works! just not "1784588"
                 if (![pastboardContents isEqualToString:@"1784588"]) {
-                    //whatever you want runing in backround ,just coding here...
-//                    [self sendNotification: [AppConfig sharedAppConfig].enWord];
-                    [self getCnDefinition];
-
-                    if ([AppConfig sharedAppConfig].cnWord) {
-                        NSString *msg = [NSString stringWithFormat:@"%@:%@",[AppConfig sharedAppConfig].enWord,[AppConfig sharedAppConfig].cnWord];
-                        [self sendNotification:msg];
-                    }
+//@@@@@@@@@ detected run in here...
+                    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                        // 耗时的操作
+                        //比如网络请求 string = [request star]；
+                        [self getCnDefinition];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            // 更新界面
+                            // 比如 self.label.text = string;
+                            if ([AppConfig sharedAppConfig].cnWord) {
+                                NSString *msg = [NSString stringWithFormat:@"%@:%@",[AppConfig sharedAppConfig].enWord,[AppConfig sharedAppConfig].cnWord];
+                                [self sendNotification:msg];
+                            }
+                        });
+                    });
                 }
             }
             [UIPasteboard generalPasteboard].string = @"1784588";
-
             // Wait some time before going to the beginning of the loop
             [NSThread sleepForTimeInterval:0.5];
             //            [self cancelAllNotification];
         }
-
         // End the task
         [application endBackgroundTask:task];
     });

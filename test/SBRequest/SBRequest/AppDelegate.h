@@ -12,7 +12,7 @@
 {
     int _count;
     UIBackgroundTaskIdentifier _taskId;
-    UIBackgroundTaskIdentifier  _taskId2;
+
 }
 @property (strong, nonatomic) UIWindow *window;
 
