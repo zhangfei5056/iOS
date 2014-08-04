@@ -4,20 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>test_FuckJSON_FuckHttp.xcscheme</key>
+		<key>testAutoLayout.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>14</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>34824F21196C16FE00D0AE2D</key>
+		<key>340F7E0D1981003900FA39C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34824F2E196C16FE00D0AE2D</key>
+		<key>340F7E231981003900FA39C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

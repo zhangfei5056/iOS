@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testAutoLayout/testAutoLayout.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SBRequest_iPad/SBRequest_iPad.xcodeproj">
    </FileRef>
    <FileRef
