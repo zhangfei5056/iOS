@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testUITableViewWithNSPredicateFilter/testUITableViewWithNSPredicateFilter.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:testAutoLayout/testAutoLayout.xcodeproj">
    </FileRef>
    <FileRef
