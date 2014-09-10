@@ -1,15 +1,14 @@
 //
 //  ViewController.m
-//  testBacgGround_OC
+//  testAnimation
 //
-//  Created by caoyuan on 7/13/14.
-//  Copyright (c) 2014 caoyuan. All rights reserved.
+//  Created by caoyuan on 9/10/14.
+//  Copyright (c) 2014 cniia. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @interface ViewController ()
-            
 
 @end
 
@@ -24,11 +23,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)btAction:(id)sender {
-}
-- (IBAction)ddd:(id)sender {
-}
 
-- (IBAction)xxcxzc:(id)sender {
-}
 @end

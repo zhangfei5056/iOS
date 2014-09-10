@@ -34,4 +34,6 @@
 
 - (IBAction)aaaa:(id)sender {
 }
+- (IBAction)q:(id)sender {
+}
 @end

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testAnimation/testAnimation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:testBlockView/testBlockView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:testUITableViewWithNSPredicateFilter/testUITableViewWithNSPredicateFilter.xcodeproj">
    </FileRef>
    <FileRef
