@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorizationViewController">
@@ -16,17 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-2F-7NK">
-                    <rect key="frame" x="534" y="985" width="102" height="30"/>
-                    <state key="normal" title="reLoad">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="reLogin:" destination="-1" eventType="touchUpInside" id="IrT-HW-e0z"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-CI-9LN">
-                    <rect key="frame" x="659" y="985" width="89" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-CI-9LN">
+                    <rect key="frame" x="641" y="964" width="89" height="30"/>
                     <state key="normal" title="getToken">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -34,22 +24,40 @@
                         <action selector="getTheToken:" destination="-1" eventType="touchUpInside" id="7EY-MH-gBV"/>
                     </connections>
                 </button>
-                <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-S6-7VV">
-                    <rect key="frame" x="0.0" y="38" width="768" height="452"/>
+                <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-S6-7VV">
+                    <rect key="frame" x="20" y="20" width="629" height="325"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-2F-7NK">
+                    <rect key="frame" x="516" y="964" width="102" height="30"/>
+                    <state key="normal" title="reLoad">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reLogin:" destination="-1" eventType="touchUpInside" id="IrT-HW-e0z"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.75364431389999997" green="1" blue="0.44213919509999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="fc6-S6-7VV" secondAttribute="trailing" constant="1" id="EXD-hl-rXN"/>
-                <constraint firstItem="fc6-S6-7VV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="VmC-oD-FZe"/>
-                <constraint firstItem="fc6-S6-7VV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="k2R-Kt-S7t"/>
-                <constraint firstItem="NZG-CI-9LN" firstAttribute="top" secondItem="fc6-S6-7VV" secondAttribute="bottom" constant="80" id="qfF-Pj-Vfq"/>
-                <constraint firstItem="NZG-CI-9LN" firstAttribute="bottom" secondItem="Vd9-2F-7NK" secondAttribute="bottom" constant="5" id="ruG-yX-2QH"/>
+                <constraint firstAttribute="trailing" secondItem="NZG-CI-9LN" secondAttribute="trailing" constant="38" id="6Id-o6-cMa"/>
+                <constraint firstAttribute="bottom" secondItem="NZG-CI-9LN" secondAttribute="bottom" constant="30" id="QBe-V1-0al"/>
+                <constraint firstAttribute="trailing" secondItem="fc6-S6-7VV" secondAttribute="trailing" constant="1" id="XyJ-fj-SRW"/>
+                <constraint firstItem="NZG-CI-9LN" firstAttribute="top" secondItem="fc6-S6-7VV" secondAttribute="bottom" constant="60" id="gL3-Lg-M2a"/>
+                <constraint firstAttribute="bottom" secondItem="Vd9-2F-7NK" secondAttribute="bottom" constant="30" id="hb9-If-QxK"/>
+                <constraint firstItem="NZG-CI-9LN" firstAttribute="leading" secondItem="Vd9-2F-7NK" secondAttribute="trailing" constant="23" id="mH0-KX-RY4"/>
+                <constraint firstItem="fc6-S6-7VV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nah-q1-nF2"/>
+                <constraint firstItem="fc6-S6-7VV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="urj-Rl-a1h"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="310" y="-35"/>
+            <point key="canvasLocation" x="281" y="-68"/>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="768" height="1024"/>
+            <size key="landscapeSize" width="1024" height="768"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
 </document>

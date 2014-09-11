@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,30 +14,34 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fls-2B-zM4">
-                                <rect key="frame" x="36" y="31" width="96" height="105"/>
-                                <color key="backgroundColor" red="1" green="0.55671254650000002" blue="0.46947020859999999" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zla-45-XAO">
-                                <rect key="frame" x="36" y="167" width="151" height="187"/>
-                                <color key="backgroundColor" red="0.196969697" green="0.196969697" blue="0.196969697" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-R9-3bW">
+                                <rect key="frame" x="20" y="20" width="560" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J62-U1-pck">
+                                <rect key="frame" x="534" y="718" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8275205243" green="1" blue="0.81189834819999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Fls-2B-zM4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="73k-vN-rLN"/>
-                            <constraint firstItem="Fls-2B-zM4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="Fc6-p8-xTf"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Zla-45-XAO" secondAttribute="bottom" constant="126" id="RdW-u3-VW9"/>
-                            <constraint firstAttribute="trailing" secondItem="Fls-2B-zM4" secondAttribute="trailing" constant="20" id="jW4-nP-sug"/>
-                            <constraint firstAttribute="trailing" secondItem="Zla-45-XAO" secondAttribute="trailing" constant="20" id="lZI-Em-7ad"/>
-                            <constraint firstItem="Zla-45-XAO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="qIj-SS-Ypk"/>
-                            <constraint firstItem="Zla-45-XAO" firstAttribute="top" secondItem="Fls-2B-zM4" secondAttribute="bottom" constant="20" id="rCd-fd-f2n"/>
+                            <constraint firstItem="rJi-R9-3bW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="21" id="1cn-mF-EYk"/>
+                            <constraint firstItem="J62-U1-pck" firstAttribute="top" secondItem="rJi-R9-3bW" secondAttribute="bottom" constant="41" id="4Ir-PK-xf8"/>
+                            <constraint firstItem="rJi-R9-3bW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="21" id="7Sd-cE-KSo"/>
+                            <constraint firstAttribute="trailing" secondItem="J62-U1-pck" secondAttribute="trailing" constant="21" id="HuQ-49-d3k"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J62-U1-pck" secondAttribute="bottom" constant="20" id="Xgb-Fa-xWI"/>
+                            <constraint firstAttribute="trailing" secondItem="rJi-R9-3bW" secondAttribute="trailing" constant="21" id="v9E-1O-Fma"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad">
+                        <size key="portraitSize" width="768" height="1024"/>
+                        <size key="landscapeSize" width="1024" height="768"/>
+                    </simulatedScreenMetrics>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
