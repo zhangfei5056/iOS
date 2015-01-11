@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3466AA211A62731A00451BE9 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3466AA201A62731A00451BE9 /* image.xcassets */; };
+		349098E11A5E584F00DBFD77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 349098E01A5E584F00DBFD77 /* main.m */; };
+		349098EF1A5E584F00DBFD77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349098ED1A5E584F00DBFD77 /* LaunchScreen.xib */; };
+		349098FB1A5E584F00DBFD77 /* BaiduQingpaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349098FA1A5E584F00DBFD77 /* BaiduQingpaTests.m */; };
+		34B69E661A5E807800385331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E5F1A5E807800385331 /* AppDelegate.m */; };
+		34B69E671A5E807800385331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E611A5E807800385331 /* ViewController.m */; };
+		34B69E681A5E807800385331 /* BetweenDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E631A5E807800385331 /* BetweenDaysViewController.m */; };
+		34B69E691A5E807800385331 /* BetweenDaysViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B69E641A5E807800385331 /* BetweenDaysViewController.xib */; };
+		34B69E6A1A5E807800385331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B69E651A5E807800385331 /* Main.storyboard */; };
+		34B69E721A5E808600385331 /* FlatDatePicker-Icon-Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B69E6C1A5E808600385331 /* FlatDatePicker-Icon-Check.png */; };
+		34B69E731A5E808600385331 /* FlatDatePicker-Icon-Check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B69E6D1A5E808600385331 /* FlatDatePicker-Icon-Check@2x.png */; };
+		34B69E741A5E808600385331 /* FlatDatePicker-Icon-Close.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B69E6E1A5E808600385331 /* FlatDatePicker-Icon-Close.png */; };
+		34B69E751A5E808600385331 /* FlatDatePicker-Icon-Close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34B69E6F1A5E808600385331 /* FlatDatePicker-Icon-Close@2x.png */; };
+		34B69E761A5E808600385331 /* FlatDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E711A5E808600385331 /* FlatDatePicker.m */; };
+		F31A3F8BAB1DC27E1811491B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80FE49A007C3D3096EBCBCD /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		349098F51A5E584F00DBFD77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 349098D31A5E584F00DBFD77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 349098DA1A5E584F00DBFD77;
+			remoteInfo = BaiduQingpa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3466AA201A62731A00451BE9 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		349098DB1A5E584F00DBFD77 /* BaiduQingpa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduQingpa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		349098DF1A5E584F00DBFD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349098E01A5E584F00DBFD77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		349098EE1A5E584F00DBFD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		349098F41A5E584F00DBFD77 /* BaiduQingpaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduQingpaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		349098F91A5E584F00DBFD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349098FA1A5E584F00DBFD77 /* BaiduQingpaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduQingpaTests.m; sourceTree = "<group>"; };
+		34B69E5E1A5E807800385331 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34B69E5F1A5E807800385331 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34B69E601A5E807800385331 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		34B69E611A5E807800385331 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34B69E621A5E807800385331 /* BetweenDaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetweenDaysViewController.h; sourceTree = "<group>"; };
+		34B69E631A5E807800385331 /* BetweenDaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetweenDaysViewController.m; sourceTree = "<group>"; };
+		34B69E641A5E807800385331 /* BetweenDaysViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BetweenDaysViewController.xib; sourceTree = "<group>"; };
+		34B69E651A5E807800385331 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		34B69E6C1A5E808600385331 /* FlatDatePicker-Icon-Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Check.png"; sourceTree = "<group>"; };
+		34B69E6D1A5E808600385331 /* FlatDatePicker-Icon-Check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Check@2x.png"; sourceTree = "<group>"; };
+		34B69E6E1A5E808600385331 /* FlatDatePicker-Icon-Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Close.png"; sourceTree = "<group>"; };
+		34B69E6F1A5E808600385331 /* FlatDatePicker-Icon-Close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Close@2x.png"; sourceTree = "<group>"; };
+		34B69E701A5E808600385331 /* FlatDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatDatePicker.h; sourceTree = "<group>"; };
+		34B69E711A5E808600385331 /* FlatDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatDatePicker.m; sourceTree = "<group>"; };
+		88C26E584BC698FBA622A347 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9B8693D412AA190BCE2302F5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F80FE49A007C3D3096EBCBCD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		349098D81A5E584F00DBFD77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31A3F8BAB1DC27E1811491B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349098F11A5E584F00DBFD77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		128194F4CEE198CAE5CF3506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80FE49A007C3D3096EBCBCD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		349098D21A5E584F00DBFD77 = {
+			isa = PBXGroup;
+			children = (
+				3466AA201A62731A00451BE9 /* image.xcassets */,
+				349098DD1A5E584F00DBFD77 /* BaiduQingpa */,
+				349098F71A5E584F00DBFD77 /* BaiduQingpaTests */,
+				349098DC1A5E584F00DBFD77 /* Products */,
+				B26CFE57DC8EE05A1FB96A9C /* Pods */,
+				128194F4CEE198CAE5CF3506 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		349098DC1A5E584F00DBFD77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				349098DB1A5E584F00DBFD77 /* BaiduQingpa.app */,
+				349098F41A5E584F00DBFD77 /* BaiduQingpaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		349098DD1A5E584F00DBFD77 /* BaiduQingpa */ = {
+			isa = PBXGroup;
+			children = (
+				34B69E6B1A5E808600385331 /* FlatDatePicker */,
+				34B69E5E1A5E807800385331 /* AppDelegate.h */,
+				34B69E5F1A5E807800385331 /* AppDelegate.m */,
+				34B69E601A5E807800385331 /* ViewController.h */,
+				34B69E611A5E807800385331 /* ViewController.m */,
+				34B69E621A5E807800385331 /* BetweenDaysViewController.h */,
+				34B69E631A5E807800385331 /* BetweenDaysViewController.m */,
+				34B69E641A5E807800385331 /* BetweenDaysViewController.xib */,
+				34B69E651A5E807800385331 /* Main.storyboard */,
+				349098ED1A5E584F00DBFD77 /* LaunchScreen.xib */,
+				349098DE1A5E584F00DBFD77 /* Supporting Files */,
+			);
+			path = BaiduQingpa;
+			sourceTree = "<group>";
+		};
+		349098DE1A5E584F00DBFD77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				349098DF1A5E584F00DBFD77 /* Info.plist */,
+				349098E01A5E584F00DBFD77 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		349098F71A5E584F00DBFD77 /* BaiduQingpaTests */ = {
+			isa = PBXGroup;
+			children = (
+				349098FA1A5E584F00DBFD77 /* BaiduQingpaTests.m */,
+				349098F81A5E584F00DBFD77 /* Supporting Files */,
+			);
+			path = BaiduQingpaTests;
+			sourceTree = "<group>";
+		};
+		349098F81A5E584F00DBFD77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				349098F91A5E584F00DBFD77 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34B69E6B1A5E808600385331 /* FlatDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				34B69E6C1A5E808600385331 /* FlatDatePicker-Icon-Check.png */,
+				34B69E6D1A5E808600385331 /* FlatDatePicker-Icon-Check@2x.png */,
+				34B69E6E1A5E808600385331 /* FlatDatePicker-Icon-Close.png */,
+				34B69E6F1A5E808600385331 /* FlatDatePicker-Icon-Close@2x.png */,
+				34B69E701A5E808600385331 /* FlatDatePicker.h */,
+				34B69E711A5E808600385331 /* FlatDatePicker.m */,
+			);
+			path = FlatDatePicker;
+			sourceTree = "<group>";
+		};
+		B26CFE57DC8EE05A1FB96A9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88C26E584BC698FBA622A347 /* Pods.debug.xcconfig */,
+				9B8693D412AA190BCE2302F5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		349098DA1A5E584F00DBFD77 /* BaiduQingpa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349098FE1A5E584F00DBFD77 /* Build configuration list for PBXNativeTarget "BaiduQingpa" */;
+			buildPhases = (
+				AB6DCC7D06D137AE0DF849B3 /* Check Pods Manifest.lock */,
+				349098D71A5E584F00DBFD77 /* Sources */,
+				349098D81A5E584F00DBFD77 /* Frameworks */,
+				349098D91A5E584F00DBFD77 /* Resources */,
+				4BE23C956E474F7CF60B23C5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaiduQingpa;
+			productName = BaiduQingpa;
+			productReference = 349098DB1A5E584F00DBFD77 /* BaiduQingpa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		349098F31A5E584F00DBFD77 /* BaiduQingpaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349099011A5E584F00DBFD77 /* Build configuration list for PBXNativeTarget "BaiduQingpaTests" */;
+			buildPhases = (
+				349098F01A5E584F00DBFD77 /* Sources */,
+				349098F11A5E584F00DBFD77 /* Frameworks */,
+				349098F21A5E584F00DBFD77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				349098F61A5E584F00DBFD77 /* PBXTargetDependency */,
+			);
+			name = BaiduQingpaTests;
+			productName = BaiduQingpaTests;
+			productReference = 349098F41A5E584F00DBFD77 /* BaiduQingpaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		349098D31A5E584F00DBFD77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = caoyuan;
+				TargetAttributes = {
+					349098DA1A5E584F00DBFD77 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = P5KA42SBNC;
+					};
+					349098F31A5E584F00DBFD77 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 349098DA1A5E584F00DBFD77;
+					};
+				};
+			};
+			buildConfigurationList = 349098D61A5E584F00DBFD77 /* Build configuration list for PBXProject "BaiduQingpa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 349098D21A5E584F00DBFD77;
+			productRefGroup = 349098DC1A5E584F00DBFD77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				349098DA1A5E584F00DBFD77 /* BaiduQingpa */,
+				349098F31A5E584F00DBFD77 /* BaiduQingpaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		349098D91A5E584F00DBFD77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B69E691A5E807800385331 /* BetweenDaysViewController.xib in Resources */,
+				349098EF1A5E584F00DBFD77 /* LaunchScreen.xib in Resources */,
+				34B69E751A5E808600385331 /* FlatDatePicker-Icon-Close@2x.png in Resources */,
+				34B69E741A5E808600385331 /* FlatDatePicker-Icon-Close.png in Resources */,
+				34B69E6A1A5E807800385331 /* Main.storyboard in Resources */,
+				3466AA211A62731A00451BE9 /* image.xcassets in Resources */,
+				34B69E731A5E808600385331 /* FlatDatePicker-Icon-Check@2x.png in Resources */,
+				34B69E721A5E808600385331 /* FlatDatePicker-Icon-Check.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349098F21A5E584F00DBFD77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BE23C956E474F7CF60B23C5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6DCC7D06D137AE0DF849B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		349098D71A5E584F00DBFD77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B69E681A5E807800385331 /* BetweenDaysViewController.m in Sources */,
+				34B69E671A5E807800385331 /* ViewController.m in Sources */,
+				34B69E661A5E807800385331 /* AppDelegate.m in Sources */,
+				349098E11A5E584F00DBFD77 /* main.m in Sources */,
+				34B69E761A5E808600385331 /* FlatDatePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349098F01A5E584F00DBFD77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349098FB1A5E584F00DBFD77 /* BaiduQingpaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		349098F61A5E584F00DBFD77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 349098DA1A5E584F00DBFD77 /* BaiduQingpa */;
+			targetProxy = 349098F51A5E584F00DBFD77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		349098ED1A5E584F00DBFD77 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				349098EE1A5E584F00DBFD77 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		349098FC1A5E584F00DBFD77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d37e45a8-900d-47a9-9f18-9bdeecb9d408";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		349098FD1A5E584F00DBFD77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "d37e45a8-900d-47a9-9f18-9bdeecb9d408";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		349098FF1A5E584F00DBFD77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C26E584BC698FBA622A347 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Cao (KD728F7XX7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Cao (KD728F7XX7)";
+				INFOPLIST_FILE = BaiduQingpa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ae2f467-137f-4c2e-87e8-7bc13e25d342";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		349099001A5E584F00DBFD77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8693D412AA190BCE2302F5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Cao (KD728F7XX7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Cao (KD728F7XX7)";
+				INFOPLIST_FILE = BaiduQingpa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9ae2f467-137f-4c2e-87e8-7bc13e25d342";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		349099021A5E584F00DBFD77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BaiduQingpaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaiduQingpa.app/BaiduQingpa";
+			};
+			name = Debug;
+		};
+		349099031A5E584F00DBFD77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BaiduQingpaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaiduQingpa.app/BaiduQingpa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		349098D61A5E584F00DBFD77 /* Build configuration list for PBXProject "BaiduQingpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349098FC1A5E584F00DBFD77 /* Debug */,
+				349098FD1A5E584F00DBFD77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349098FE1A5E584F00DBFD77 /* Build configuration list for PBXNativeTarget "BaiduQingpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349098FF1A5E584F00DBFD77 /* Debug */,
+				349099001A5E584F00DBFD77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		349099011A5E584F00DBFD77 /* Build configuration list for PBXNativeTarget "BaiduQingpaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				349099021A5E584F00DBFD77 /* Debug */,
+				349099031A5E584F00DBFD77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 349098D31A5E584F00DBFD77 /* Project object */;
+}
