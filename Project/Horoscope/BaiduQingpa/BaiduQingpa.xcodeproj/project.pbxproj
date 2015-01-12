@@ -11,6 +11,7 @@
 		349098E11A5E584F00DBFD77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 349098E01A5E584F00DBFD77 /* main.m */; };
 		349098EF1A5E584F00DBFD77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349098ED1A5E584F00DBFD77 /* LaunchScreen.xib */; };
 		349098FB1A5E584F00DBFD77 /* BaiduQingpaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 349098FA1A5E584F00DBFD77 /* BaiduQingpaTests.m */; };
+		34A97B9F1A63B05B00F6C829 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34A97B9E1A63B05B00F6C829 /* Default-568h@2x.png */; };
 		34B69E661A5E807800385331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E5F1A5E807800385331 /* AppDelegate.m */; };
 		34B69E671A5E807800385331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E611A5E807800385331 /* ViewController.m */; };
 		34B69E681A5E807800385331 /* BetweenDaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B69E631A5E807800385331 /* BetweenDaysViewController.m */; };
@@ -43,6 +44,7 @@
 		349098F41A5E584F00DBFD77 /* BaiduQingpaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiduQingpaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349098F91A5E584F00DBFD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349098FA1A5E584F00DBFD77 /* BaiduQingpaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduQingpaTests.m; sourceTree = "<group>"; };
+		34A97B9E1A63B05B00F6C829 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		34B69E5E1A5E807800385331 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34B69E5F1A5E807800385331 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		34B69E601A5E807800385331 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		349098D21A5E584F00DBFD77 = {
 			isa = PBXGroup;
 			children = (
+				34A97B9E1A63B05B00F6C829 /* Default-568h@2x.png */,
 				3466AA201A62731A00451BE9 /* image.xcassets */,
 				349098DD1A5E584F00DBFD77 /* BaiduQingpa */,
 				349098F71A5E584F00DBFD77 /* BaiduQingpaTests */,
@@ -261,6 +264,7 @@
 			files = (
 				34B69E691A5E807800385331 /* BetweenDaysViewController.xib in Resources */,
 				349098EF1A5E584F00DBFD77 /* LaunchScreen.xib in Resources */,
+				34A97B9F1A63B05B00F6C829 /* Default-568h@2x.png in Resources */,
 				34B69E751A5E808600385331 /* FlatDatePicker-Icon-Close@2x.png in Resources */,
 				34B69E741A5E808600385331 /* FlatDatePicker-Icon-Close.png in Resources */,
 				34B69E6A1A5E807800385331 /* Main.storyboard in Resources */,
@@ -372,8 +376,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Baidu Netcom Science & Technology Co.,Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing Baidu Netcom Science & Technology Co.,Ltd.";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -393,7 +397,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "d37e45a8-900d-47a9-9f18-9bdeecb9d408";
+				PROVISIONING_PROFILE = "7a34734c-f818-410f-b888-93fee1015f8c";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,7 +420,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Baidu Netcom Science & Technology Co.,Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -430,7 +434,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "d37e45a8-900d-47a9-9f18-9bdeecb9d408";
+				PROVISIONING_PROFILE = "7a34734c-f818-410f-b888-93fee1015f8c";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -442,13 +446,13 @@
 			baseConfigurationReference = 88C26E584BC698FBA622A347 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Cao (KD728F7XX7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Baidu Netcom Science & Technology Co.,Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Cao (KD728F7XX7)";
 				INFOPLIST_FILE = BaiduQingpa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9ae2f467-137f-4c2e-87e8-7bc13e25d342";
+				PROVISIONING_PROFILE = "7a34734c-f818-410f-b888-93fee1015f8c";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -458,13 +462,13 @@
 			baseConfigurationReference = 9B8693D412AA190BCE2302F5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Yuan Cao (KD728F7XX7)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Baidu Netcom Science & Technology Co.,Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yuan Cao (KD728F7XX7)";
 				INFOPLIST_FILE = BaiduQingpa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9ae2f467-137f-4c2e-87e8-7bc13e25d342";
+				PROVISIONING_PROFILE = "7a34734c-f818-410f-b888-93fee1015f8c";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
