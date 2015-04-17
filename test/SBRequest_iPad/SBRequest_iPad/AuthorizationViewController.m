@@ -56,13 +56,22 @@
  */
 
 
-
-
+/**
+ *  新申请一个token，将token持久化，
+ *
+ *  @param sender <#sender description#>
+ */
 
 - (IBAction)getTheToken:(id)sender {
     NSString* nowURLString = self.webView.request.URL.absoluteString;
     self.token = [nowURLString substringWithRange:NSMakeRange(58, 30)];
     [AppConfig sharedAppConfig].token = self.token;
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:self.token forKey:@"token"];
+    [userDefaults synchronize];
+    
+    
+    
     if (self.token == nil) {
         NSLog(@"token is nil");
     }

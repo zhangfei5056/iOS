@@ -128,7 +128,10 @@
 }
 // add word to glossry need your shanbay access token and the word's id
 -(void)addNewWord{
-    NSString *token = [AppConfig sharedAppConfig].token;
+    NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+    NSString *token =  [userDefaultes stringForKey:@"token"];
+    NSLog(@"userDefaultes token : %@",token);
+    
     NSString *idd = [AppConfig sharedAppConfig].idd;
     NSString *addNewWordURL = [NSString stringWithFormat:@"https://api.shanbay.com/bdc/learning/?access_token=%@",token];
 

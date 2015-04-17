@@ -51,7 +51,12 @@
  */
 
 - (IBAction)addNewWord:(id)sender {
-    NSString *addNewWordURL = [NSString stringWithFormat:@"https://api.shanbay.com/bdc/learning/?access_token=%@",self.token];
+    
+     NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+    NSString *token =  [userDefaultes stringForKey:@"token"];
+    NSLog(@"userDefaultes token : %@",token);
+    
+    NSString *addNewWordURL = [NSString stringWithFormat:@"https://api.shanbay.com/bdc/learning/?access_token=%@",token];
 
     NSDictionary *postDic = @{@"id":self.idd};
     NSMutableDictionary  *ddd = [[NSMutableDictionary alloc] initWithDictionary:postDic];
