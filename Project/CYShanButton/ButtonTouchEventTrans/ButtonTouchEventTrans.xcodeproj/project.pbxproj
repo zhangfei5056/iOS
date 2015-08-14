@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344DA0021B79A55000125391 /* CYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 344DA0011B79A55000125391 /* CYButton.m */; };
+		344DA0071B79D8B500125391 /* position.png in Resources */ = {isa = PBXBuildFile; fileRef = 344DA0031B79D8B500125391 /* position.png */; };
+		344DA0081B79D8B500125391 /* waimai.png in Resources */ = {isa = PBXBuildFile; fileRef = 344DA0041B79D8B500125391 /* waimai.png */; };
+		344DA0091B79D8B500125391 /* qunaer.png in Resources */ = {isa = PBXBuildFile; fileRef = 344DA0051B79D8B500125391 /* qunaer.png */; };
+		344DA00A1B79D8B500125391 /* nuomi.png in Resources */ = {isa = PBXBuildFile; fileRef = 344DA0061B79D8B500125391 /* nuomi.png */; };
+		3486AA891B784B2B00363867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3486AA881B784B2B00363867 /* main.m */; };
+		3486AA8C1B784B2B00363867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3486AA8B1B784B2B00363867 /* AppDelegate.m */; };
+		3486AA8F1B784B2B00363867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3486AA8E1B784B2B00363867 /* ViewController.m */; };
+		3486AA921B784B2B00363867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3486AA901B784B2B00363867 /* Main.storyboard */; };
+		3486AA941B784B2B00363867 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3486AA931B784B2B00363867 /* Images.xcassets */; };
+		3486AA971B784B2B00363867 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3486AA951B784B2B00363867 /* LaunchScreen.xib */; };
+		3486AAA31B784B2B00363867 /* ButtonTouchEventTransTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3486AAA21B784B2B00363867 /* ButtonTouchEventTransTests.m */; };
+		3486AAAE1B78562A00363867 /* CMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3486AAAD1B78562A00363867 /* CMView.m */; };
+		3E7DB36C0A74CD24B76E2411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C45635A38E4D0F3540EEC26 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3486AA9D1B784B2B00363867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3486AA7B1B784B2A00363867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3486AA821B784B2A00363867;
+			remoteInfo = ButtonTouchEventTrans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344DA0001B79A55000125391 /* CYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYButton.h; sourceTree = "<group>"; };
+		344DA0011B79A55000125391 /* CYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYButton.m; sourceTree = "<group>"; };
+		344DA0031B79D8B500125391 /* position.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = position.png; sourceTree = "<group>"; };
+		344DA0041B79D8B500125391 /* waimai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waimai.png; sourceTree = "<group>"; };
+		344DA0051B79D8B500125391 /* qunaer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qunaer.png; sourceTree = "<group>"; };
+		344DA0061B79D8B500125391 /* nuomi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuomi.png; sourceTree = "<group>"; };
+		3486AA831B784B2B00363867 /* ButtonTouchEventTrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonTouchEventTrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3486AA871B784B2B00363867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3486AA881B784B2B00363867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3486AA8A1B784B2B00363867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3486AA8B1B784B2B00363867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3486AA8D1B784B2B00363867 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3486AA8E1B784B2B00363867 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3486AA911B784B2B00363867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3486AA931B784B2B00363867 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3486AA961B784B2B00363867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3486AA9C1B784B2B00363867 /* ButtonTouchEventTransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTouchEventTransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3486AAA11B784B2B00363867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3486AAA21B784B2B00363867 /* ButtonTouchEventTransTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTouchEventTransTests.m; sourceTree = "<group>"; };
+		3486AAAC1B78562A00363867 /* CMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMView.h; sourceTree = "<group>"; };
+		3486AAAD1B78562A00363867 /* CMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMView.m; sourceTree = "<group>"; };
+		362657227EC6BD1A420DB828 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7C45635A38E4D0F3540EEC26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13CCE7931DD2919BF65AEF2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3486AA801B784B2A00363867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7DB36C0A74CD24B76E2411 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3486AA991B784B2B00363867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3486AA7A1B784B2A00363867 = {
+			isa = PBXGroup;
+			children = (
+				3486AA851B784B2B00363867 /* ButtonTouchEventTrans */,
+				3486AA9F1B784B2B00363867 /* ButtonTouchEventTransTests */,
+				3486AA841B784B2B00363867 /* Products */,
+				D9BD8171B07E34C1B756AF74 /* Pods */,
+				9E4C2C0EDB55421B483D2EC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3486AA841B784B2B00363867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3486AA831B784B2B00363867 /* ButtonTouchEventTrans.app */,
+				3486AA9C1B784B2B00363867 /* ButtonTouchEventTransTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3486AA851B784B2B00363867 /* ButtonTouchEventTrans */ = {
+			isa = PBXGroup;
+			children = (
+				3486AA8A1B784B2B00363867 /* AppDelegate.h */,
+				3486AA8B1B784B2B00363867 /* AppDelegate.m */,
+				3486AA8D1B784B2B00363867 /* ViewController.h */,
+				3486AA8E1B784B2B00363867 /* ViewController.m */,
+				344DA0001B79A55000125391 /* CYButton.h */,
+				344DA0011B79A55000125391 /* CYButton.m */,
+				3486AA901B784B2B00363867 /* Main.storyboard */,
+				3486AAAC1B78562A00363867 /* CMView.h */,
+				3486AAAD1B78562A00363867 /* CMView.m */,
+				3486AA931B784B2B00363867 /* Images.xcassets */,
+				344DA0031B79D8B500125391 /* position.png */,
+				344DA0041B79D8B500125391 /* waimai.png */,
+				344DA0051B79D8B500125391 /* qunaer.png */,
+				344DA0061B79D8B500125391 /* nuomi.png */,
+				3486AA951B784B2B00363867 /* LaunchScreen.xib */,
+				3486AA861B784B2B00363867 /* Supporting Files */,
+			);
+			path = ButtonTouchEventTrans;
+			sourceTree = "<group>";
+		};
+		3486AA861B784B2B00363867 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3486AA871B784B2B00363867 /* Info.plist */,
+				3486AA881B784B2B00363867 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3486AA9F1B784B2B00363867 /* ButtonTouchEventTransTests */ = {
+			isa = PBXGroup;
+			children = (
+				3486AAA21B784B2B00363867 /* ButtonTouchEventTransTests.m */,
+				3486AAA01B784B2B00363867 /* Supporting Files */,
+			);
+			path = ButtonTouchEventTransTests;
+			sourceTree = "<group>";
+		};
+		3486AAA01B784B2B00363867 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3486AAA11B784B2B00363867 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E4C2C0EDB55421B483D2EC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C45635A38E4D0F3540EEC26 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9BD8171B07E34C1B756AF74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E13CCE7931DD2919BF65AEF2 /* Pods.debug.xcconfig */,
+				362657227EC6BD1A420DB828 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3486AA821B784B2A00363867 /* ButtonTouchEventTrans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3486AAA61B784B2B00363867 /* Build configuration list for PBXNativeTarget "ButtonTouchEventTrans" */;
+			buildPhases = (
+				CE474053FB551F9E2C9E7A4D /* Check Pods Manifest.lock */,
+				3486AA7F1B784B2A00363867 /* Sources */,
+				3486AA801B784B2A00363867 /* Frameworks */,
+				3486AA811B784B2A00363867 /* Resources */,
+				8D54A5704E64589CD2DC23E7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButtonTouchEventTrans;
+			productName = ButtonTouchEventTrans;
+			productReference = 3486AA831B784B2B00363867 /* ButtonTouchEventTrans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3486AA9B1B784B2B00363867 /* ButtonTouchEventTransTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3486AAA91B784B2B00363867 /* Build configuration list for PBXNativeTarget "ButtonTouchEventTransTests" */;
+			buildPhases = (
+				3486AA981B784B2B00363867 /* Sources */,
+				3486AA991B784B2B00363867 /* Frameworks */,
+				3486AA9A1B784B2B00363867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3486AA9E1B784B2B00363867 /* PBXTargetDependency */,
+			);
+			name = ButtonTouchEventTransTests;
+			productName = ButtonTouchEventTransTests;
+			productReference = 3486AA9C1B784B2B00363867 /* ButtonTouchEventTransTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3486AA7B1B784B2A00363867 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = caoyuan;
+				TargetAttributes = {
+					3486AA821B784B2A00363867 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3486AA9B1B784B2B00363867 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 3486AA821B784B2A00363867;
+					};
+				};
+			};
+			buildConfigurationList = 3486AA7E1B784B2A00363867 /* Build configuration list for PBXProject "ButtonTouchEventTrans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3486AA7A1B784B2A00363867;
+			productRefGroup = 3486AA841B784B2B00363867 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3486AA821B784B2A00363867 /* ButtonTouchEventTrans */,
+				3486AA9B1B784B2B00363867 /* ButtonTouchEventTransTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3486AA811B784B2A00363867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344DA0071B79D8B500125391 /* position.png in Resources */,
+				344DA0091B79D8B500125391 /* qunaer.png in Resources */,
+				3486AA921B784B2B00363867 /* Main.storyboard in Resources */,
+				3486AA971B784B2B00363867 /* LaunchScreen.xib in Resources */,
+				344DA0081B79D8B500125391 /* waimai.png in Resources */,
+				3486AA941B784B2B00363867 /* Images.xcassets in Resources */,
+				344DA00A1B79D8B500125391 /* nuomi.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3486AA9A1B784B2B00363867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D54A5704E64589CD2DC23E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE474053FB551F9E2C9E7A4D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3486AA7F1B784B2A00363867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3486AA8F1B784B2B00363867 /* ViewController.m in Sources */,
+				344DA0021B79A55000125391 /* CYButton.m in Sources */,
+				3486AA8C1B784B2B00363867 /* AppDelegate.m in Sources */,
+				3486AAAE1B78562A00363867 /* CMView.m in Sources */,
+				3486AA891B784B2B00363867 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3486AA981B784B2B00363867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3486AAA31B784B2B00363867 /* ButtonTouchEventTransTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3486AA9E1B784B2B00363867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3486AA821B784B2A00363867 /* ButtonTouchEventTrans */;
+			targetProxy = 3486AA9D1B784B2B00363867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3486AA901B784B2B00363867 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3486AA911B784B2B00363867 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3486AA951B784B2B00363867 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3486AA961B784B2B00363867 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3486AAA41B784B2B00363867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3486AAA51B784B2B00363867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3486AAA71B784B2B00363867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13CCE7931DD2919BF65AEF2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButtonTouchEventTrans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3486AAA81B784B2B00363867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362657227EC6BD1A420DB828 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButtonTouchEventTrans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3486AAAA1B784B2B00363867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ButtonTouchEventTransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonTouchEventTrans.app/ButtonTouchEventTrans";
+			};
+			name = Debug;
+		};
+		3486AAAB1B784B2B00363867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ButtonTouchEventTransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonTouchEventTrans.app/ButtonTouchEventTrans";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3486AA7E1B784B2A00363867 /* Build configuration list for PBXProject "ButtonTouchEventTrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3486AAA41B784B2B00363867 /* Debug */,
+				3486AAA51B784B2B00363867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3486AAA61B784B2B00363867 /* Build configuration list for PBXNativeTarget "ButtonTouchEventTrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3486AAA71B784B2B00363867 /* Debug */,
+				3486AAA81B784B2B00363867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3486AAA91B784B2B00363867 /* Build configuration list for PBXNativeTarget "ButtonTouchEventTransTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3486AAAA1B784B2B00363867 /* Debug */,
+				3486AAAB1B784B2B00363867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3486AA7B1B784B2A00363867 /* Project object */;
+}
